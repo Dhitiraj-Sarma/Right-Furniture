@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import ProductCart from "../ProductCart";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-function FeaturedProduct() {
+function BestSeller() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -24,9 +24,9 @@ function FeaturedProduct() {
 
   return (
     <>
-      <div className="w-full grid grid-cols-3 py-5 px-3 gap-3">
+      <div className="w-full grid grid-cols-3 p-3 gap-3">
         {data.length > 0 &&
-          data.slice(0, 6).map((product) => (
+          data.slice(3, 9).map((product) => (
             <div key={product.id}>
               <ProductCart data={product} />
             </div>
@@ -39,4 +39,4 @@ function FeaturedProduct() {
   );
 }
 
-export default FeaturedProduct;
+export default BestSeller;

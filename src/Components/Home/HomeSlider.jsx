@@ -46,7 +46,7 @@ function HomeSlider() {
                   {slide.subtitle}
                 </p>
                 <Link to={slide.link}>
-                  <button className="bg-teal-600 text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-teal-700 focus:outline-none focus:ring-4 focus:ring-teal-400 transition duration-300 ease-in-out transform hover:scale-105">
+                  <button className="bg-teal-500 text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-teal-600 focus:outline-none focus:ring-4 focus:ring-teal-400 transition duration-300 ease-in-out transform hover:scale-105">
                     {slide.buttonText}
                   </button>
                 </Link>
