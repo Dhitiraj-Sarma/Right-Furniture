@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
-import { FaRegHeart } from "react-icons/fa6";
 import CartOffset from "./CartOffset";
+import WishlistOffset from "./WishlistOffset";
 
 function Navbar() {
   const navItems = [
@@ -38,7 +38,7 @@ function Navbar() {
           </ul>
         </div>
         <div className="flex-1 text-xl gap-5 flex justify-end items-center">
-          <FaRegHeart />
+          <WishlistOffset />
           <CartOffset />
         </div>
       </div>
