@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 
 function ShopDropDown({ products, sortedData }) {
@@ -28,6 +29,7 @@ function ShopDropDown({ products, sortedData }) {
   return (
     <div>
       <select
+        className="focus:outline-none border border-gray-400 py-2 px-3 rounded-md bg-[#f4ede4]"
         id="shopDropDown"
         value={shopDropDown}
         onChange={handleSortChange}

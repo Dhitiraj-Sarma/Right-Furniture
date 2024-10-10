@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar";
 import Shop from "./Pages/Shop";
 import Cart from "./Pages/Cart";
 import Wishlist from "./Pages/Wishlist";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/wishlist" element={<Wishlist />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

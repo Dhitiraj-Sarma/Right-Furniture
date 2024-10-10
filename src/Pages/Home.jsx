@@ -1,4 +1,3 @@
-import Footer from "../Components/Footer";
 import BestSeller from "../Components/Home/BestSeller";
 import Category from "../Components/Home/Category";
 import FeaturedProduct from "../Components/Home/FeaturedProduct";
@@ -41,9 +40,6 @@ function Home() {
       </div>
       <div className="w-11/12 py-5">
         <NewsLetter />
-      </div>
-      <div className="w-full bg-slate-200">
-        <Footer />
       </div>
     </div>
   );

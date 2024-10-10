@@ -8,8 +8,8 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <>
-      <div className="w-11/12 h-full mx-auto  gap-3 px-3 py-3 flex justify-center items-start">
+    <div className="w-full bg-slate-200">
+      <div className="w-11/12 h-full mx-auto  gap-3 px-3 py-3 flex justify-center items-start ">
         <div className="flex flex-col flex-1">
           <h1 className="logo font-bold text-2xl py-2 title">Furniture</h1>
           <p className="text-sm text-slate-600 italic py-3">
@@ -78,7 +78,7 @@ function Footer() {
           className="w-full h-full max-w-[200px]"
         />
       </div>
-    </>
+    </div>
   );
 }
 
