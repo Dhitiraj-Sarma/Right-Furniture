@@ -42,7 +42,7 @@ function Home() {
       <div className="w-11/12 py-5">
         <NewsLetter />
       </div>
-      <div className="w-full">
+      <div className="w-full bg-slate-200">
         <Footer />
       </div>
     </div>
