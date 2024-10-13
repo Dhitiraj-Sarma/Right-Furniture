@@ -13,7 +13,7 @@ function Home() {
       </div>
       <div className="w-11/12 py-5">
         <div className="py-2">
-          <h1 className="title font-bold text-3xl text-center">
+          <h1 className="title font-bold text-xl sm:text-2xl lg:text-3xl text-center">
             Find Your Style: Furniture Categories
           </h1>
         </div>
@@ -21,7 +21,7 @@ function Home() {
       </div>
       <div className="w-11/12 py-5">
         <div className="py-2">
-          <h1 className="title font-bold text-3xl text-center">
+          <h1 className="title font-bold text-xl sm:text-2xl lg:text-3xl text-center">
             Discover Our Featured Products
           </h1>
         </div>
@@ -32,7 +32,7 @@ function Home() {
       </div>
       <div className="w-11/12 py-5">
         <div className="py-2">
-          <h1 className="title font-bold text-3xl text-center">
+          <h1 className="title font-bold text-xl sm:text-2xl lg:text-3xl text-center">
             Discover Our Best Seller
           </h1>
         </div>

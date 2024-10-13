@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ProductCart from "../ProductCart";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 function FeaturedProduct() {
   const [data, setData] = useState([]);
@@ -24,17 +25,21 @@ function FeaturedProduct() {
 
   return (
     <>
-      <div className="w-full grid grid-cols-3 py-5 px-3 gap-3">
+      <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5 py-8 px-4">
         {data.length > 0 &&
           data.slice(0, 6).map((product) => (
-            <div key={product.id}>
+            <div key={product.id} className="flex justify-center">
               <ProductCart data={product} />
             </div>
           ))}
       </div>
-      <button className="flex gap-2 items-center justify-center mx-auto bg-teal-400 text-white font-semibold hover:bg-teal-500 transition-colors duration-500 py-2 px-5 rounded-md">
-        View More <FaArrowRightLong />
-      </button>
+      <div className="flex justify-center py-5">
+        <Link to="/shop">
+          <button className="flex gap-2 items-center bg-teal-400 text-white font-semibold hover:bg-teal-500 transition-colors duration-500 py-3 px-6 rounded-md">
+            View More <FaArrowRightLong />
+          </button>
+        </Link>
+      </div>
     </>
   );
 }

@@ -9,9 +9,11 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <div className="w-full bg-slate-200">
-      <div className="w-11/12 h-full mx-auto  gap-3 px-3 py-3 flex justify-center items-start ">
+      <div className="w-11/12 h-full mx-auto flex-wap flex-col  gap-3 px-3 py-3 md:flex-row flex md:justify-center justify-start  items-start ">
         <div className="flex flex-col flex-1">
-          <h1 className="logo font-bold text-2xl py-2 title">Furniture</h1>
+          <h1 className="logo font-bold md:text-2xl text-xl py-2 title">
+            Furniture
+          </h1>
           <p className="text-sm text-slate-600 italic py-3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Reprehenderit sed, veniam quis doloremque, natus quos amet
@@ -68,7 +70,7 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className="flex justify-between items-center border-t border-slate-600 w-11/12 mx-auto py-3">
+      <div className="flex sm:flex-row flex-col justify-between items-center border-t border-slate-600 w-11/12 mx-auto py-3">
         <h4 className="flex items-center justify-center gap-2 font-semibold">
           <FaRegCopyright /> All rights reserved.
         </h4>

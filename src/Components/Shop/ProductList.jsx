@@ -29,7 +29,7 @@ function ProductList() {
       <div className="flex justify-end items-center w-full">
         <ShopDropDown products={InitialProducts} sortedData={setData} />
       </div>
-      <div className="w-full grid grid-cols-4 py-5 px-3 gap-3">
+      <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5 py-8 px-4">
         {data.length > 0 &&
           data.map((product) => (
             <div key={product.id}>

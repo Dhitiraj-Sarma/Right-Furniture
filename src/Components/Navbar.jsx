@@ -2,20 +2,25 @@ import { Link } from "react-router-dom";
 
 import CartOffset from "./CartOffset";
 import WishlistOffset from "./WishlistOffset";
+import { BsShop, BsCart4 } from "react-icons/bs";
+import { FaRegHeart } from "react-icons/fa6";
 
 function Navbar() {
   const navItems = [
     {
       label: "Shop",
       path: "/shop",
+      icon: <BsShop />,
     },
     {
       label: "Cart",
       path: "/cart",
+      icon: <BsCart4 />,
     },
     {
       label: "Wishlist",
       path: "/wishlist",
+      icon: <FaRegHeart />,
     },
   ];
   return (
@@ -24,7 +29,11 @@ function Navbar() {
         <div className="flex-1 ">
           <h1 className="logo font-bold text-2xl">
             <Link to="/">
-              <img src="./img/logo.png" alt="logo" className="w-28 h-auto" />
+              <img
+                src="./img/logo.png"
+                alt="logo"
+                className="w-20 sm:w-28 h-auto"
+              />
             </Link>
           </h1>
         </div>
@@ -32,12 +41,16 @@ function Navbar() {
           <ul className="flex uppercase font-bold justify-center items-center gap-5">
             {navItems.map((item, index) => (
               <li key={index}>
-                <Link to={item.path}>{item.label}</Link>
+                <Link to={item.path}>
+                  <span className="sm:block hidden">{item.label}</span>
+
+                  <span className="block sm:hidden">{item.icon}</span>
+                </Link>
               </li>
             ))}
           </ul>
         </div>
-        <div className="flex-1 text-xl gap-5 flex justify-end items-center">
+        <div className="flex-1 text-xl sm:gap-5 gap-1 flex justify-end items-center">
           <WishlistOffset />
           <CartOffset />
         </div>
