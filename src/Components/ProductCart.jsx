@@ -2,6 +2,7 @@ import { FaRegEye, FaRegHeart } from "react-icons/fa6";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../slices/cartSlice";
 import { addToWishlist } from "../slices/wishlistSlice";
+import { Link } from "react-router-dom";
 
 /* eslint-disable react/prop-types */
 function ProductCart({ data }) {
@@ -50,9 +51,11 @@ function ProductCart({ data }) {
           >
             <FaRegHeart />
           </button>
-          <button className="bg-teal-200 p-3 rounded-full hover:bg-teal-400 transition-colors duration-500">
-            <FaRegEye />
-          </button>
+          <Link to={`/product/${data.id}`}>
+            <button className="bg-teal-200 p-3 rounded-full hover:bg-teal-400 transition-colors duration-500">
+              <FaRegEye />
+            </button>
+          </Link>
         </div>
       </div>
       <div className="py-3">

@@ -1,9 +1,6 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 import Navbar from "./Components/Navbar";
-// import Shop from "./Pages/Shop";
-// import Cart from "./Pages/Cart";
-// import Wishlist from "./Pages/Wishlist";
 import Footer from "./Components/Footer";
 import React, { Suspense } from "react";
 
@@ -12,6 +9,7 @@ function App() {
   const Shop = React.lazy(() => import("./Pages/Shop"));
   const Cart = React.lazy(() => import("./Pages/Cart"));
   const Wishlist = React.lazy(() => import("./Pages/Wishlist"));
+  const ProductDetails = React.lazy(() => import("./Pages/ProductDetails"));
 
   return (
     <Router>
@@ -23,6 +21,7 @@ function App() {
             <Route path="/shop" element={<Shop />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/wishlist" element={<Wishlist />} />
+            <Route path="/product/:productId" element={<ProductDetails />} />
           </Routes>
         </Suspense>
         <Footer />
